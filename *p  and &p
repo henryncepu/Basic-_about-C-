@@ -7,3 +7,6 @@ int a =5; int* ptr=a;就是错误的，指针不能接受一个值
 int a =5; int* ptr=&a;才对，把a的地址给指针ptr
 
 pointer need to point at address of the storage Unit ,it can not point at the data inside this storage Unit directly 
+
+Pointer point to the address ,but pointer is not the address .
+You can find the address through the pointer ,but you can not say pointer is the address 
