@@ -2,3 +2,8 @@ In fact , Variable “a ”is a symbol of storage unit .
 CPU get access to the data of this Storage Unit through accessing the storage Unit’s address 
 Hence, “a ” represent two different values : (1) the address of the storage Unit ,(2) the data inside the storage Unit .
 C language set “a” is the data inside the storage Unit, &a is the address of storage Unit 
+
+int a =5; int* ptr=a;就是错误的，指针不能接受一个值
+int a =5; int* ptr=&a;才对，把a的地址给指针ptr
+
+pointer need to point at address of the storage Unit ,it can not point at the data inside this storage Unit directly 
