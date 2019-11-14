@@ -1,0 +1,26 @@
+when using scanf  : 
+  the difference between use & and without use it :
+    -- int a ;
+       char name[20];
+       scanf("%s",name);
+       scnaf("%d",&a);
+     variable "a" is just used for storing the data ,if you didn't use &, it will not know where is the address of the Storage Unit
+     name[] is an array ,and array is another type of pointer ,hence ,we can just input the data into array without & 
+     
+ when using printf :
+   the difference between use & and without use it :
+     every data can just be printed out without using & 
+     if use &a ,the data will be something not related to your aim 
+     
+     for example : 
+     int a ;
+     a = 3
+     printf("%d",a);
+     printf("%d",&a);
+     
+     the result is :
+     -3
+     -1703724
+     
+     
+     
