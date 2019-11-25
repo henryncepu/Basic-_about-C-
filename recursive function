@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <malloc.h>
+
+fun(int num){
+	if (num > 10){
+		return 0;#break;// we should not use break,we could use return 0 instead  
+	}
+	printf("%d\n",num);
+	fun(num+1);
+}
+int main(void){
+	fun(5);
+}
+
+
